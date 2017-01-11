@@ -1,0 +1,116 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: $defaultFont;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $defaultFont;
+}
+
+p {
+  font-size: 14px;
+}
+
+blockquote {
+  font-family: $defaultFont;
+  border: 0;
+  display: block;
+  position: relative;
+  padding: 20px 45px;
+  font-size: 14px;
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    content: '\f10e';
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-family: $icon-font;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: $quotesColor;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  &:after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    content: '\f10e';
+    display: block;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    font-family: $icon-font;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    color: $quotesColor;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.btn {
+  transition: 0.2s;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.btn-default {
+  background: $defaultColor;
+  color: #fff;
+  &:hover {
+    border-color: transparent;
+    background: $defaultLightColor;
+    color: #fff;
+  }
+  &:active {
+    border-color: transparent;
+    background: $defaultLightColor;
+    color: #fff;
+    box-shadow: none;
+    &:hover {
+      border-color: transparent;
+      background: $defaultLightColor;
+      color: #fff;
+    }
+  }
+  &:focus {
+    border-color: transparent;
+    background: $defaultLightColor;
+    color: #fff;
+    outline: 0;
+  }
+}
