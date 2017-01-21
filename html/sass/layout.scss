@@ -287,6 +287,7 @@ textarea.form-control {
 .top-phone {
   display: inline-block;
   a {
+    transition: 0.2s;
     color: #000;
     text-decoration: none;
     &:hover {
