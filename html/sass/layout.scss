@@ -259,33 +259,44 @@ textarea.form-control {
 }
 /* ============ Form end ============ */
 
-input[type=checkbox] {
-  position: relative;
+/* ============ Top menu ============ */
+.top-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  li {
+    display: inline-block;
+    padding: 0 5px;
+    margin: 0 10px;
+    a {
+      transition: 0.2s;
+      color: #000;
+      text-decoration: none;
+      font-size: 14px;
+      &:hover {
+        color: $defaultColor;
+        text-decoration: none;
 
-  z-index: 1;
-  &:before {
-    opacity: 1;
-    content: ' ';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    z-index: 2;
-  }
-
-  &:checked {
-    &:after {
-      content: ' ';
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: #000;
-      top: 50%;
-      left: 50%;
-      margin-top: -5px;
-      margin-left: -5px;
-      z-index: 2;
+      }
     }
   }
 }
+/* ========== Top menu end ========== */
+/* ============ Top phone =========== */
+.top-phone {
+  display: inline-block;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: $defaultColor;
+      text-decoration: none;
+    }
+  }
+  .icon-whatsapp {
+    font-size: 20px;
+  }
+}
+/* ========== Top phone end ========= */
+

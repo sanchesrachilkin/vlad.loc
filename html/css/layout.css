@@ -557,31 +557,50 @@ textarea.form-control {
 }
 
 /* ============ Form end ============ */
-input[type=checkbox] {
-  position: relative;
-  z-index: 1;
+/* ============ Top menu ============ */
+.top-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
 }
 
-input[type=checkbox]:before {
-  opacity: 1;
-  content: ' ';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #fff;
-  border: 1px solid #ccc;
-  z-index: 2;
+.top-menu li {
+  display: inline-block;
+  padding: 0 5px;
+  margin: 0 10px;
 }
 
-input[type=checkbox]:checked:after {
-  content: ' ';
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: #000;
-  top: 50%;
-  left: 50%;
-  margin-top: -5px;
-  margin-left: -5px;
-  z-index: 2;
+.top-menu li a {
+  transition: 0.2s;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
 }
+
+.top-menu li a:hover {
+  color: #597a85;
+  text-decoration: none;
+}
+
+/* ========== Top menu end ========== */
+/* ============ Top phone =========== */
+.top-phone {
+  display: inline-block;
+}
+
+.top-phone a {
+  color: #000;
+  text-decoration: none;
+}
+
+.top-phone a:hover {
+  color: #597a85;
+  text-decoration: none;
+}
+
+.top-phone .icon-whatsapp {
+  font-size: 20px;
+}
+
+/* ========== Top phone end ========= */
