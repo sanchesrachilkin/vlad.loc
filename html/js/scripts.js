@@ -7,3 +7,15 @@
 //Parallax bg ?
 //Validation form
 
+$(document).on('ready', function() {
+    FullScreenSliderInit();
+});
+
+
+function FullScreenSliderInit() {
+    $('.slider-full-screen').slick({
+        arrows: true,
+        dots: true,
+        adaptiveHeight: true
+    });
+}

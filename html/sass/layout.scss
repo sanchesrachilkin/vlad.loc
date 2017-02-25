@@ -6,6 +6,7 @@
 .logo-box {
   display: inline-block;
   vertical-align: middle;
+  height: 50px;
 }
 .logo {
   font-size: 26px;
@@ -35,8 +36,10 @@
   padding: 0;
   margin: 0;
   height: 50px;
-  line-height: 50px;
-  background: $light-gray ;
+  background: $light-gray;
+  .container {
+    height: 50px;
+  }
 }
 /* ========== Top bar end ============ */
 /* ========== Comment item =========== */
@@ -183,6 +186,9 @@
   color: #000;
   text-align: left;
   min-height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .portfolio-img-btn {
   transition: 0.2s;
@@ -300,4 +306,31 @@ textarea.form-control {
   }
 }
 /* ========== Top phone end ========= */
+
+/* ======= Full Screen slider ======= */
+.slider-section {
+  .container-fluid {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+.slider-full-screen_item {
+  max-height: 450px;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.slider-full-screen_item__decs-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+/* ===== Full Screen slider end ===== */
 

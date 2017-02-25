@@ -265,6 +265,7 @@
 .logo-box {
   display: inline-block;
   vertical-align: middle;
+  height: 50px;
 }
 
 .logo {
@@ -299,8 +300,11 @@
   padding: 0;
   margin: 0;
   height: 50px;
-  line-height: 50px;
   background: #f7f7f7;
+}
+
+.top-bar .container {
+  height: 50px;
 }
 
 /* ========== Top bar end ============ */
@@ -473,6 +477,9 @@
   color: #000;
   text-align: left;
   min-height: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio-img-btn {
@@ -590,6 +597,7 @@ textarea.form-control {
 }
 
 .top-phone a {
+  transition: 0.2s;
   color: #000;
   text-decoration: none;
 }
@@ -604,3 +612,30 @@ textarea.form-control {
 }
 
 /* ========== Top phone end ========= */
+/* ======= Full Screen slider ======= */
+.slider-section .container-fluid {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-full-screen_item {
+  max-height: 450px;
+  position: relative;
+}
+
+.slider-full-screen_item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.slider-full-screen_item__decs-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* ===== Full Screen slider end ===== */
